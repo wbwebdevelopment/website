@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+:root{
+    --main-bg-color: #232323;
+    --main-text-color: white;
+    
+    --secondary-text-color: #d92828;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
