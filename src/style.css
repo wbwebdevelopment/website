@@ -13,3 +13,20 @@
 body{
     background-color: var(--main-bg-color);
 }
+/* TABLET STYLES */ 
+
+@media only screen and (min-width: 650px) and (max-width: 990px){ 
+
+  
+
+} 
+
+  
+
+/* MOBILE STYLES */ 
+
+@media only screen and (max-width: 649px){ 
+
+ 
+
+} 
