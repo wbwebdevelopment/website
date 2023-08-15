@@ -86,9 +86,11 @@ header{
     .point img{
         width: 3em;
         margin-right: 1.5em;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
     }
     .point span{
         font-size: 1.6vw;
+        opacity: 0;
     }
 
 @media only screen and (max-width: 1600px){

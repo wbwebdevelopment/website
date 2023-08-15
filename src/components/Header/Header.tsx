@@ -1,8 +1,31 @@
+import gsap from "gsap"
 import "./header.css"
 import Point from "./Point"
+import { useEffect } from "react"
 
 
 export default function Header() {
+
+  useEffect(()=>{
+    const tl = gsap.timeline();
+    tl.to(".point img",{
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      duration: 0.5,
+      ease: "power2.in",
+      stagger: 0.3
+
+    })
+    const tl2 = gsap.timeline();
+    tl2.to(".point span",{
+      opacity: 1,
+      duration: 0.5,
+      ease: "power2.in",
+      stagger: 0.3
+
+    })
+  }, [])
+  
+
   return (
     <header>
       <div id="logoWrapper">
