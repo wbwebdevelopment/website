@@ -1,0 +1,73 @@
+#ourProcess{
+    min-height: 80vh;
+    padding: 2rem 0 4rem 0;
+}
+#ourProcessTitleWrapper{
+    position: relative;
+}
+
+#ourProcessTitle{
+    display: inline-block;
+    color: var(--secondary-color);
+    position: relative;
+    margin-left: 10%;
+    background-color: var(--main-color);
+    padding: 0 1%;
+}
+
+#ourProcessTitleWrapper::after{
+    display: inline-block;
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+#ourProcessGridWrapper{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#ourProcessGrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "title1 desc1 desc1"
+      "title2 desc2 desc2"
+      "title3 desc3 desc3"
+      "title4 desc4 desc4"; 
+      color: var(--secondary-text-color);
+  }
+  #ourProcessGrid div:not(#ourProcessGrid div:nth-last-child(4)){
+    border-bottom: 10px solid var(--secondary-color);
+  }
+  #gridTitle1 { grid-area: title1; }
+  #gridTitle2 { grid-area: title2; }
+  #gridTitle3 { grid-area: title3; }
+  #gridDesc1{grid-area: desc1;}
+  #gridDesc2{grid-area: desc2;}
+  #gridDesc3{grid-area: desc3;}
+
+  .grid-title{
+    border-right: 10px solid var(--secondary-color);
+    font-weight: bold;
+    font-size: 4rem;
+    padding-top: 3.5rem;
+  }
+
+  .grid-desc{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 10rem;
+    font-weight: 200;
+    font-size: 1.3rem;
+  }

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+header{
+    position: relative;
+    min-height: 100vh;
+}
+
+#headerBg{
+    display: inline-block;
+    position: absolute;
+    right:0;
+    top:0;
+    width: 45%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+#logoWrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#mainLogo{
+    display: block;
+    width: 25%;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+#getInTouch{
+    margin-right: 1.5em;
+    font-family: var(--main-font);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10em;
+    border: 4px solid var(--main-text-color);
+    padding: 0.3em;
+    font-size: 1.5em;
+    color: var(--main-text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+    #getInTouch img{
+        width: 20%;
+    }
+
+#mainTagline{
+    font-family: var(--secondary-font);
+    margin-top: 2em;
+    margin-left: 0.5em;
+    letter-spacing: 0.05em;
+    font-size: 6em;
+    color: var(--third-color);
+}
+    #mainTagline span{
+        color: var(--secondary-color);
+    }
+
+#secondTagline{
+    font-family: var(--main-font);
+    font-weight: 300;
+    color: var(--third-color);
+    font-size: 2em;
+    width: 45%;
+    margin-top: 1em;
+    margin-left: 2em;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+}
+
+#pointsWrapper{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+.point{
+    display: flex;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+    .point img{
+        width: 3em;
+        margin-right: 1.5em;
+    }
+    .point span{
+        font-size: 1.6vw;
+    }
+
+@media only screen and (max-width: 1600px){
+    #headerBg{
+        width: 65%;
+    }
+    #mainTagline{
+        font-size: 5em;
+    }
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+}
