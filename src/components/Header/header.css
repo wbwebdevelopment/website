@@ -29,7 +29,7 @@ header{
     margin-left: 4em;
 }
 
-#getInTouch{
+.get-in-touch-button{
     margin-right: 1.5em;
     font-family: var(--main-font);
     display: flex;
@@ -43,7 +43,7 @@ header{
     font-weight: bold;
     text-decoration: none;
 }
-    #getInTouch img{
+    .get-in-touch-button img{
         width: 20%;
     }
 

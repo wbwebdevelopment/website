@@ -1,0 +1,36 @@
+#tagline{
+    min-height: 40vh;
+}
+
+#taglineWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#taglineContent{
+    width: 40%;
+}
+
+#taglineAnimation{
+    width: 40%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taglineContent p{
+    color: var(--secondary-text-color);
+    font-weight: 200;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+}
+#taglineContent p:nth-child(1){
+    margin-bottom: 3rem;
+}
+#taglineButton{
+    margin-top: 2rem;
+    border: none;
+    background-color: var(--secondary-color);
+}
