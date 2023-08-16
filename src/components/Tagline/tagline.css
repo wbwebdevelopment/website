@@ -34,3 +34,22 @@
     border: none;
     background-color: var(--secondary-color);
 }
+
+/* Medium Laptop Styles */
+@media only screen and (min-width: 1401px) and (max-width: 1920px){
+    #taglineContent p{
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+}
+
+/* Small Laptop Styles */
+@media only screen and (min-width: 1025px) and (max-width: 1400px){
+    #taglineContent p:nth-child(1){
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    #taglineContent p{
+        font-size: 1.4rem;
+    }
+}

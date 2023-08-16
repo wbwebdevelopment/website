@@ -77,3 +77,16 @@
     padding-left: 2%;
 }
 
+    /* Small Laptop Styles */
+    @media only screen and (max-width: 1400px){
+        
+        #contactForm{
+            padding: 1.5rem;
+            width: 24rem;
+            min-height: 28rem;
+        }
+        
+        #contactFormTitle{
+            font-size: 3rem;
+        }
+}

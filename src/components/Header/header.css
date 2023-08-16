@@ -49,10 +49,10 @@ header{
 
 #mainTagline{
     font-family: var(--secondary-font);
-    margin-top: 2em;
-    margin-left: 0.5em;
+    margin-top: 2rem;
+    margin-left: 2rem;
     letter-spacing: 0.05em;
-    font-size: 6em;
+    font-size: 6rem;
     color: var(--third-color);
 }
     #mainTagline span{
@@ -63,11 +63,11 @@ header{
     font-family: var(--main-font);
     font-weight: 300;
     color: var(--third-color);
-    font-size: 2em;
+    font-size: 2rem;
     width: 45%;
-    margin-top: 1em;
-    margin-left: 2em;
-    line-height: 1.8em;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    line-height: 2em;
     letter-spacing: 0.05em;
 }
 
@@ -98,7 +98,24 @@ header{
         width: 65%;
     }
     #mainTagline{
-        font-size: 5em;
+        font-size: 5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px){
+    #headerBg{
+        width: 65%;
+    }
+    #mainTagline{
+        font-size: 4rem;
+    }
+    #pointsWrapper{
+        bottom: 1%;
+        right: 4%;
+    }
+    #secondTagline{
+        font-size: 1.6rem;
     }
 }
 

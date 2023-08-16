@@ -1,5 +1,5 @@
 #reviewsWrapper{
-    width: 50%;
+    width: 55%;
     position: relative;
 }
 
@@ -53,4 +53,22 @@
         font-style: italic;
         color: #e9e9e9;
         letter-spacing: 0.1rem;
+    }
+
+    /* Small Laptop Styles */
+    @media only screen and (max-width: 1400px){
+        #reviewsTitle{
+            font-size: 3rem;
+        }
+        
+        #reviewsContainer{
+            height: 25rem;
+        }
+        
+        .review{
+            width: 15rem;
+            padding: 1.4rem 1.7rem;
+            border-radius: 14px;
+            font-size: 1rem;
+        }
     }

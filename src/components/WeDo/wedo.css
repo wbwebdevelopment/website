@@ -9,7 +9,7 @@
 
 #weDoTitle{
     font-size: 7rem;
-    padding-left: 4%;
+    padding-left: 2%;
     display: inline-block;
     width: 15%;
     line-height: 10rem;
@@ -17,6 +17,7 @@
 
 #weDoGrid{
     padding-top: 2rem;
+    padding-left: 2%;
     display: inline-grid;
     width: 60%;
     grid-template-columns: 1fr 1fr;
@@ -25,6 +26,32 @@
 }
 
 .wedo-grid-item{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
+}
+
+/* Medium Laptop Styles */
+@media only screen and (min-width: 1401px) and (max-width: 1920px){
+    .wedo-grid-item{
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Laptop Styles */
+@media only screen and (min-width: 1025px) and (max-width: 1400px){
+    #weDo{
+        padding: 1.5rem 0;
+    }
+    #weDoTitle{
+        font-size: 6rem;
+        padding-left: 0;
+    }
+    
+    #weDoGrid{
+        padding-left: 4%;
+    }
+    
+    .wedo-grid-item{
+        font-size: 1.3rem;
+    }
 }
