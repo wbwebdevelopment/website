@@ -46,7 +46,7 @@ export default function FormAndReviews() {
             </div>
         </div>
 
-        <form method="POST" action="https://formsubmit.co/wbojczukdev@gmail.com" id="contactForm">
+        <form method="POST" action="https://formsubmit.co/97aca8e29358f1aec86ce3da24c5e17f" id="contactForm">
         <input type="hidden" name="_cc" value="williambojczuk@gmail.com"/>
         <input type="hidden" name="_next" value={`${window.location.origin}/messagesuccess=true`}/>
             

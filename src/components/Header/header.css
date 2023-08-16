@@ -81,7 +81,8 @@ header{
     top: 2vw;
     margin-left: 2rem;
     padding: 0.5vw 2vw;
-    box-shadow: 0px 0px 8px var(--secondary-color);
+    box-shadow: 0px 0px 8px #9b1d1d;
+    border: 1px solid var(--main-color);
     font-size: 2rem;
 }
 
