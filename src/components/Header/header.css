@@ -115,6 +115,7 @@ header{
         width: 65%;
     }
     #mainTagline{
+        margin-top: 4vw;
         font-size: 5rem;
     }
     
@@ -125,6 +126,7 @@ header{
         width: 65%;
     }
     #mainTagline{
+        margin-top: 4vw;
         font-size: 4rem;
     }
     #pointsWrapper{
