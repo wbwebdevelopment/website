@@ -46,7 +46,10 @@ export default function FormAndReviews() {
             </div>
         </div>
 
-        <form method="POST" action="#temp" id="contactForm">
+        <form method="POST" action="https://formsubmit.co/contact@wbwebdev.com" id="contactForm">
+        <input type="hidden" name="_cc" value="williambojczuk@gmail.com"/>
+        <input type="hidden" name="_next" value={`${window.location.origin}/messagesuccess=true`}/>
+            
             <h2 id="contactFormTitle">Let's Talk!</h2>
             <div className="input-wrapper">
                 <img src="./img/icons/person-icon.svg" alt="Person Icon" />
