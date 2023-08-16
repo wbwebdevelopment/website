@@ -192,7 +192,7 @@ header{
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
     #pointsWrapper{
-        bottom: 8%;
+        bottom: 15%;
     }
     #mainLogo{
         width: 40%;
@@ -212,7 +212,7 @@ header{
     }
     
     #mainTagline{
-        margin-top: 15vh;
+        margin-top: 10vh;
         margin-left: 2vh;
         font-size: 2.5rem;
         text-shadow: 0px 0px 5px black;
