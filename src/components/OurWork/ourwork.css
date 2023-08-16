@@ -1,0 +1,150 @@
+#ourWork{
+    padding: 4rem 0;
+}
+#ourWorkTitle{
+    color: var(--main-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+#ourWorkTitle::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 60%;
+    aspect-ratio: 1/1;
+    top:-0.1%;
+    right:0;
+    background-color: var(--main-color);
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+}
+#ourWorkTitle::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 60%;
+    aspect-ratio: 1/1;
+    bottom:-0.1%;
+    left:0;
+    background-color: var(--main-color);
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%);
+}
+
+#projectsWrapper{
+    margin-top: 5rem;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.project{
+    display: inline-block;
+    width: 40%;
+    margin: 3rem 5%;
+}
+    .project-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .project-title{
+        color: var(--secondary-color);
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.1em;
+        margin-top: 0.5rem;
+    }
+    .project-link{
+        display: inline-block;
+        text-decoration: none;
+        color: var(--secondary-text-color);
+        font-size: 1.5rem;
+        padding: 0.5rem 5rem;
+        border: 3px solid var(--secondary-color); 
+        margin-top: 1rem;
+    }
+
+/* Small Laptop Styles */
+@media only screen and (max-width: 1400px){
+    .project{
+        margin: 2rem 5%;
+    }
+    .project-title{
+        font-size: 2.2rem;
+    }
+    .project-link{
+        font-size: 1.1rem;
+        padding: 0.4rem 4rem;
+        margin-top: 0.8rem;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #ourWork{
+        padding: 4vw 0;
+    }
+    #ourWorkTitle{
+        font-size: 2.5rem;
+    }
+    
+    #projectsWrapper{
+        margin-top: 5vw;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .project{
+        width: 45%;
+        margin: 3vw 2.5%;
+    }
+        .project-title{
+            font-size: 2.2rem;
+            margin-top: 2vw;
+        }
+        .project-link{
+            font-size: 1.3rem;
+            padding: 1vw 8vw;
+            margin-top: 2vw;
+        }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #ourWork{
+        padding: 4vh 0;
+    }
+    #ourWorkTitle{
+        font-size: 1.5rem;
+    }
+    
+    #projectsWrapper{
+        margin-top: 5vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .project{
+        width: 90%;
+        margin: 3vh 5%;
+    }
+        .project-title{
+            font-size: 2rem;
+            margin-top: 1vh;
+        }
+        .project-link{
+            font-size: 1.2rem;
+            padding: 0.5vh 6vh;
+            margin-top: 1vh;
+        }
+}
+
+/* VERY SMALL  MOBILE STYLES */
+@media only screen and (max-width: 290px){
+    #ourWorkTitle{
+        font-size: 0.9rem;
+    }
+}

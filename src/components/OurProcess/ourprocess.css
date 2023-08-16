@@ -1,0 +1,177 @@
+#ourProcess{
+    min-height: 80vh;
+    padding: 2rem 0 4rem 0;
+}
+#ourProcessTitleWrapper{
+    position: relative;
+}
+
+#ourProcessTitle{
+    display: inline-block;
+    color: var(--secondary-color);
+    position: relative;
+    margin-left: 10%;
+    background-color: var(--main-color);
+    padding: 0 1%;
+}
+
+#ourProcessTitleWrapper::after{
+    display: inline-block;
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+#ourProcessGridWrapper{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#ourProcessGrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "title1 desc1 desc1"
+      "title2 desc2 desc2"
+      "title3 desc3 desc3"
+      "title4 desc4 desc4"; 
+      color: var(--secondary-text-color);
+  }
+  #ourProcessGrid div:not(#ourProcessGrid div:nth-last-child(4)){
+    border-bottom: 10px solid var(--secondary-color);
+  }
+  #gridTitle1 { grid-area: title1; }
+  #gridTitle2 { grid-area: title2; }
+  #gridTitle3 { grid-area: title3; }
+  #gridDesc1{grid-area: desc1;}
+  #gridDesc2{grid-area: desc2;}
+  #gridDesc3{grid-area: desc3;}
+
+  .grid-title{
+    display: flex;
+    align-items: center;
+    border-right: 10px solid var(--secondary-color);
+    font-weight: bold;
+    font-size: 4rem;
+    padding-top: 3.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .grid-desc{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 10rem;
+    font-weight: 200;
+    font-size: 1.3rem;
+  }
+
+    /* Small Laptop Styles */
+    @media only screen and (min-width: 991px) and (max-width: 1400px){
+      .grid-title{
+        font-size: 3.5rem;
+        padding-top: 3rem;
+        
+      }
+    
+      .grid-desc{
+        padding-right: 3rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    /* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+  #ourProcess{
+    padding: 4vw 0 6vw 0;
+}
+
+#ourProcessTitle{
+    font-size: 4rem;
+}
+
+#ourProcessGridWrapper{
+    width: 90%;
+    margin-left: 5%;
+}
+
+  #ourProcessGrid div:not(#ourProcessGrid div:nth-last-child(4)){
+    border-bottom: 8px solid var(--secondary-color);
+  }
+
+  .grid-title{
+    border-right: 8px solid var(--secondary-color);
+    font-size: 2.8rem;
+    padding-right: 1vw;
+    padding-top: 0;
+  }
+
+  .grid-desc{
+    padding-left: 1rem;
+    padding-right: 2vw;
+    padding: 1vw 2vw 1vw 2vw;
+    font-weight: 200;
+    font-size: 1.3rem;
+
+  }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+  #ourProcess{
+    min-height: 40vh;
+    padding: 4vh 0 2vh 0;
+}
+
+#ourProcessTitle{
+    margin-left: 10%;
+    padding: 0 1%;
+    font-size: 2rem;
+}
+
+#ourProcessTitleWrapper::after{
+    height: 5px;
+}
+
+#ourProcessGridWrapper{
+    width: 90%;
+    margin-left: 5%;
+}
+  #ourProcessGrid div:not(#ourProcessGrid div:nth-last-child(4)){
+    border-bottom: 5px solid var(--secondary-color);
+  }
+
+  .grid-title{
+    border-right: 5px solid var(--secondary-color);
+    font-size: 1.5rem;
+    padding-right: 1vh;
+    padding-top: 0;
+  }
+
+  .grid-desc{
+    padding: 1vh;
+    font-size: 0.9rem;
+  }
+}
+
+/* VERY SMALL  MOBILE STYLES */
+@media only screen and (max-width: 290px){
+  .grid-title{
+    font-size: 1.2rem;
+    padding-right: 0.5vh;
+  }
+
+  #ourProcessTitle{
+    font-size: 1.5rem;
+}
+
+}

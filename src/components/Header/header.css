@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+header{
+    position: relative;
+    min-height: 100vh;
+}
+
+#headerBg{
+    display: inline-block;
+    position: absolute;
+    right:0;
+    top:0;
+    width: 45%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+#logoWrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#mainLogo{
+    display: block;
+    width: 25%;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+.get-in-touch-button{
+    margin-right: 1.5em;
+    font-family: var(--main-font);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10em;
+    border: 4px solid var(--main-text-color);
+    padding: 0.3em;
+    font-size: 1.5em;
+    color: var(--main-text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+    .get-in-touch-button img{
+        width: 20%;
+    }
+
+#mainTagline{
+    font-family: var(--secondary-font);
+    margin-top: 9vw;
+    margin-left: 2rem;
+    letter-spacing: 0.05em;
+    font-size: 6rem;
+    color: var(--third-color);
+}
+    #mainTagline span{
+        color: var(--secondary-color);
+    }
+
+#secondTagline{
+    font-family: var(--main-font);
+    font-weight: 300;
+    color: var(--third-color);
+    font-size: 2rem;
+    width: 45%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+}
+
+#contactButton{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-text-color);
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    position: relative;
+    top: 2vw;
+    margin-left: 2rem;
+    padding: 0.5vw 2vw;
+    box-shadow: 0px 0px 8px var(--secondary-color);
+    font-size: 2rem;
+}
+
+#pointsWrapper{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+.point{
+    display: flex;
+    text-align: center;
+}
+.point{
+    margin: 2.5vw 0;
+}
+    .point img{
+        width: 3em;
+        margin-right: 1.5em;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    .point span{
+        font-size: 1.6vw;
+        opacity: 0;
+    }
+
+@media only screen and (max-width: 1600px){
+    #headerBg{
+        width: 65%;
+    }
+    #mainTagline{
+        font-size: 5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    #headerBg{
+        width: 65%;
+    }
+    #mainTagline{
+        font-size: 4rem;
+    }
+    #pointsWrapper{
+        bottom: 1%;
+        right: 4%;
+    }
+    #secondTagline{
+        font-size: 1.6rem;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 451px) and (max-width: 990px){
+    #headerBg{
+        width: 75%;
+    }
+    #mainLogo{
+        width: 30%;
+        margin-top: 3vw;
+        margin-left: 8vw;
+    }
+    
+    .get-in-touch-button{
+        margin-right: 2vw;
+        width: 20vw;
+        border: 3px solid var(--main-text-color);
+        padding: 1vw;
+        font-size: 1rem;
+    }
+    
+    #mainTagline{
+        margin-top: 15vw;
+        margin-left: 5vw;
+        letter-spacing: 0.05em;
+        font-size: 5rem;
+    }
+    
+    #secondTagline{
+        font-size: 1.5rem;
+        width: 45%;
+        margin-top: 1rem;
+        margin-left: 5vw;
+    }
+    
+    #pointsWrapper{
+        display: inline-block;
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+    }
+    
+    .point{
+        margin: 5vw 0;
+    }
+        .point img{
+            width: 8vw;
+            margin-right: 3vw;
+        }
+        .point span{
+            font-size: 1.4rem;
+            opacity: 0;
+        }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #pointsWrapper{
+        bottom: 8%;
+    }
+    #mainLogo{
+        width: 40%;
+        margin-top: 3vw;
+        margin-left: 8vw;
+    }
+    #headerBg{
+        width: 100%;
+    }
+    
+    .get-in-touch-button{
+        margin-top: 3vh;
+        margin-right: 2vw;
+        width: 15vh;
+        border: 2.5px solid var(--main-text-color);
+        font-size: 0.9rem;
+    }
+    
+    #mainTagline{
+        margin-top: 15vh;
+        margin-left: 2vh;
+        font-size: 2.5rem;
+        text-shadow: 0px 0px 5px black;
+    }
+    
+    #secondTagline{
+        font-size: 1.2rem;
+        width: 80%;
+        margin-top: 3vh;
+        margin-left:3vh;
+        
+    }
+    .point img{
+        width: 4vh;
+        margin-right: 1vh;
+    }
+    .point span{
+        font-size: 1.1rem;
+        opacity: 0;
+    }
+}
+
+/* SMALL  MOBILE STYLES */
+@media only screen and (max-width: 380px){
+    #pointsWrapper{
+        bottom: 2%;
+    }
+    #mainLogo{
+        margin-top: 2vw;
+    }
+    
+    .get-in-touch-button{
+        width: 19vh;
+    }
+    
+    #mainTagline{
+        margin-top: 12vh;
+        font-size: 2.2rem;
+    }
+    
+    #secondTagline{
+        font-size: 1.1rem;
+        margin-top: 2vh;    
+    }
+    
+}
+
+/* VERY SMALL  MOBILE STYLES */
+@media only screen and (max-width: 290px){
+    #pointsWrapper{
+        bottom: 2%;
+    }
+    #mainLogo{
+        margin-top: 2vw;
+    }
+    
+    .get-in-touch-button{
+        width: 15vh;
+        font-size: 0.7rem;
+    }
+    
+    #mainTagline{
+        margin-top: 8vh;
+        font-size: 1.8rem;
+    }
+    
+    #secondTagline{
+        font-size: 1rem;
+        margin-top: 2vh;    
+    }
+    .point img{
+        width: 3vh;
+        margin-right: 1vh;
+    }
+    .point span{
+        font-size: 0.8rem;
+        opacity: 0;
+    }
+    #pointsWrapper{
+        bottom: 8%;
+    }
+}
