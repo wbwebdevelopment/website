@@ -39,6 +39,8 @@ export default function Header() {
       <h1 id="mainTagline"><span>Upgrade</span> your business!</h1>
       
       <h3 id="secondTagline">Helping businesses strengthen their online presence and branding with modern technology.</h3>
+      <a href="#contactFormTitle" id="contactButton">Contact Me</a>
+
 
       <div id="pointsWrapper">
         <Point title="Built with modern technologies" />

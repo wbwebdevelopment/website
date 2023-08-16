@@ -1,11 +1,12 @@
 #tagline{
-    min-height: 40vh;
+    padding: 4vw 0;
 }
 
 #taglineWrapper{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 #taglineContent{
@@ -51,5 +52,71 @@
     }
     #taglineContent p{
         font-size: 1.4rem;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #tagline{
+        padding: 4vw 0;
+    }
+    #taglineContent p{
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+    #taglineContent p:nth-child(1){
+        margin-bottom: 3vw;
+    }
+    #taglineButton{
+        margin-top: 3vw;
+    }
+    #taglineAnimation{
+        transform: scale(1.5);
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #tagline{
+        padding: 4vh 0;
+    }
+    #taglineWrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    
+    #taglineContent{
+        width: 80%;
+    }
+    
+    #taglineAnimation{
+        width: 60%;
+        transform: scale(1.4);
+    }
+    
+    #taglineContent p{
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+    }
+    #taglineContent p:nth-child(1){
+        margin-bottom: 3vh;
+    }
+    #taglineButton{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        width: 22vh;
+        border: none;
+        background-color: var(--secondary-color);
+    }
+}
+
+/* SMALL  MOBILE STYLES */
+@media only screen and (max-width: 380px){
+    #taglineButton{
+        font-size: 1.2rem;
+        width: 24vh;
     }
 }

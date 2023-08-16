@@ -90,3 +90,57 @@
             font-size: 3rem;
         }
 }
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #formAndReviews{
+        min-height: 25vh;
+        padding: 2vw 0;
+    }
+    
+    #contactForm{
+        padding: 2vw;
+        width: 45vw;
+    }
+    
+    #contactFormTitle{
+        font-size: 2.5em;
+    }
+    
+    .input-wrapper{
+        margin: 1vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #formAndReviews{
+        min-height: 20vh;
+        padding: 2vh 0;
+        flex-direction: column;
+    }
+    
+    #contactForm{
+        padding: 2vh;
+        width: 80vw;
+        min-height: 20vh;
+    }
+    
+    #contactFormTitle{
+        font-size: 2.5em;
+    }
+}
+
+/* VERY SMALL  MOBILE STYLES */
+@media only screen and (max-width: 290px){
+    #contactFormTitle{
+        font-size: 1.6rem;
+    }
+    #contactForm input, #contactForm textarea{
+        font-size: 1em;
+        width: 88%;
+        padding: 0.9rem 0;
+        padding-left: 12%;
+        
+    }
+}

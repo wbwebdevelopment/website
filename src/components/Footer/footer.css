@@ -14,3 +14,31 @@ footer{
     #footerLogo{
         width: 15%;
     }
+
+    /* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    footer{
+        min-height: 8vw;
+        padding: 2vw 0;
+    }
+    footer *{
+        margin: 0 2vw;
+    }
+    #footerLogo{
+        width: 25%;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    footer{
+        min-height: 5vh;
+        padding: 1.5vh 0;
+    }
+    footer *{
+        margin: 0 1vh;
+    }
+    #footerLogo{
+        width: 30%;
+    }
+}
