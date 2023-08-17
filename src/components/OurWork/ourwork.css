@@ -66,6 +66,7 @@
         padding: 0.5rem 5rem;
         border: 3px solid var(--secondary-color); 
         margin-top: 1rem;
+        transition: 0.3s ease-in-out color;
     }
 
     .project-link::after{
@@ -76,11 +77,16 @@
         height: 100%;
         background-color: var(--secondary-color);
         z-index: -1;
-        width: 0;
-        transition: 0.3s width;
+        width: 100%;
+        clip-path: circle(0% at 50% 100%);
+        transition: 0.3s clip-path;
+    }
+    .project-link:hover{
+        color: var(--main-color)
     }
     .project-link:hover::after{
-        width: 100%;
+        clip-path: circle(110% at 50% 100%);
+
     }
 
 /* Small Laptop Styles */
