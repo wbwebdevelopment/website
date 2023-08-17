@@ -13,7 +13,7 @@ header{
     height: 100%;
     background-color: var(--secondary-color);
     clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%);
-    z-index: -1;
+    z-index: -10;
 }
 
 #logoWrapper{
@@ -24,7 +24,7 @@ header{
 
 #mainLogo{
     display: block;
-    width: 25%;
+    width: 20%;
     margin-top: 2em;
     margin-left: 4em;
 }
@@ -42,6 +42,12 @@ header{
     color: var(--main-text-color);
     font-weight: bold;
     text-decoration: none;
+    transition: 0.3s box-shadow, 0.3s transform;
+}
+
+.get-in-touch-button:hover{
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.685);
+    transform: translateX(-4px) translateY(-4px);
 }
     .get-in-touch-button img{
         width: 20%;
@@ -55,8 +61,27 @@ header{
     font-size: 6rem;
     color: var(--third-color);
 }
-    #mainTagline span{
+    #mainTagline span:nth-child(1){
         color: var(--secondary-color);
+        position: relative;
+        display: inline-block;
+        --clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+    }
+    #mainTagline span:nth-child(1)::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 80%;
+        height: 20%;
+        top: 90%;
+        left: 10%;
+        background-image: url(/img/underline.svg);
+        pointer-events: none;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        clip-path: var(--clip-path);
     }
 
 #secondTagline{
@@ -65,7 +90,7 @@ header{
     color: var(--third-color);
     font-size: 2rem;
     width: 45%;
-    margin-top: 1rem;
+    margin-top: 4vw;
     margin-left: 2rem;
     line-height: 2em;
     letter-spacing: 0.05em;
@@ -74,16 +99,48 @@ header{
 #contactButton{
     display: inline-block;
     text-decoration: none;
+    position: relative;
     color: var(--main-text-color);
     background-color: var(--secondary-color);
     font-weight: 500;
     position: relative;
     top: 2vw;
-    margin-left: 2rem;
-    padding: 0.5vw 2vw;
-    box-shadow: 0px 0px 8px #9b1d1d;
-    border: 1px solid var(--main-color);
-    font-size: 1.5rem;
+    margin-left: 2vw;
+    padding: 0.6vw 3vw;
+    box-shadow: 0px 0px 5px black;
+    font-size: 1.4rem;
+}
+#contactButton::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #e03b3b;
+    z-index: -1;
+    transition: 0.4s left, 0.4s top;
+}
+#contactButton::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color:#e03b3b;
+    z-index: -1;
+    transition: 0.4s right, 0.4s bottom;
+}
+#contactButton:hover::after{
+    top:-8px;
+    left:-8px;
+}
+#contactButton:hover::before{
+    bottom:-8px;
+    right:-8px;
 }
 
 #pointsWrapper{
@@ -148,6 +205,11 @@ header{
         margin-top: 3vw;
         margin-left: 8vw;
     }
+
+    #contactButton{
+        font-size: 1.4rem;
+        padding: 1vw 4.5vw;
+    }
     
     .get-in-touch-button{
         margin-right: 2vw;
@@ -193,6 +255,12 @@ header{
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
+    #contactButton{
+        font-size: 1rem;
+        padding: 0.5vh 2vh;
+        margin-left: 4vh;
+    }
+
     #pointsWrapper{
         bottom: 15%;
     }

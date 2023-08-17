@@ -3,9 +3,9 @@ import "./reviews.css"
 import reviewData from "./reviewData"
 import Review from "./Review"
 import Carousel from "react-multi-carousel"
+import MessageStatus from "../MessageStatus/MessageStatus"
 
 export default function FormAndReviews() {
-
 
     const responsive = {
         desktop: {
@@ -28,6 +28,8 @@ export default function FormAndReviews() {
     });
 
   return (
+    <>
+    <MessageStatus />
     <section id="formAndReviews">
  
         <div id="reviewsWrapper">
@@ -48,7 +50,7 @@ export default function FormAndReviews() {
 
         <form method="POST" action="https://formsubmit.co/97aca8e29358f1aec86ce3da24c5e17f" id="contactForm">
         <input type="hidden" name="_cc" value="williambojczuk@gmail.com"/>
-        <input type="hidden" name="_next" value={`${window.location.origin}/messagesuccess=true`}/>
+        <input type="hidden" name="_next" value={`${window.location.href}?messagesuccess=true`}/>
             
             <h2 id="contactFormTitle">Let's Talk!</h2>
             <div className="input-wrapper">
@@ -69,5 +71,6 @@ export default function FormAndReviews() {
             <input type="submit" value="Send Now!" />
         </form>
     </section>
+    </>
   )
 }

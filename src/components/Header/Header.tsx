@@ -7,22 +7,30 @@ import { useEffect } from "react"
 export default function Header() {
 
   useEffect(()=>{
-    const tl = gsap.timeline();
-    tl.to(".point img",{
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 0.5,
-      ease: "power2.in",
-      stagger: 0.3
 
-    })
-    const tl2 = gsap.timeline();
-    tl2.to(".point span",{
-      opacity: 1,
-      duration: 0.5,
-      ease: "power2.in",
-      stagger: 0.3
-
-    })
+    setTimeout(()=>{
+      const tl = gsap.timeline();
+      tl.to("#mainTagline span:nth-child(1)",{
+        "--clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 0.5,
+        ease: "power1.in"
+      })
+      tl.to(".point img",{
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 0.5,
+        ease: "power2.in",
+        stagger: 0.3
+  
+      })
+      tl.to(".point span",{
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.in",
+        stagger: 0.3
+  
+      }, "<")
+    }, 500)
+    
   }, [])
   
 
@@ -36,10 +44,10 @@ export default function Header() {
           </a>
       </div>
 
-      <h1 id="mainTagline"><span>Upgrade</span> your business!</h1>
+      <h1 id="mainTagline"><span>Upgrade</span> <span>your</span> <span>business!</span></h1>
       
       <h3 id="secondTagline">Helping businesses strengthen their online presence and branding with modern technology.</h3>
-      <a href="#contactFormTitle" id="contactButton">Contact Me</a>
+      <a href="#contactFormTitle" id="contactButton">Let's Get Started!</a>
 
 
       <div id="pointsWrapper">
