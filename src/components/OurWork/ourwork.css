@@ -59,12 +59,28 @@
     }
     .project-link{
         display: inline-block;
+        position: relative;
         text-decoration: none;
         color: var(--secondary-text-color);
         font-size: 1.5rem;
         padding: 0.5rem 5rem;
         border: 3px solid var(--secondary-color); 
         margin-top: 1rem;
+    }
+
+    .project-link::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        background-color: var(--secondary-color);
+        z-index: -1;
+        width: 0;
+        transition: 0.3s width;
+    }
+    .project-link:hover::after{
+        width: 100%;
     }
 
 /* Small Laptop Styles */

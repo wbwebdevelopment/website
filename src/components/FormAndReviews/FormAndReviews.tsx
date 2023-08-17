@@ -1,11 +1,16 @@
 import "./form.css"
 import "./reviews.css"
+import { useRef, useState } from "react"
 import reviewData from "./reviewData"
 import Review from "./Review"
 import Carousel from "react-multi-carousel"
+import gsap from "gsap"
 import MessageStatus from "../MessageStatus/MessageStatus"
 
 export default function FormAndReviews() {
+
+    const [isAnimating, setIsAnimating] = useState(false);
+    const isMouseInSubmit = useRef(false);
 
     const responsive = {
         desktop: {
@@ -26,6 +31,54 @@ export default function FormAndReviews() {
     const ReviewElems = reviewData.map((data, i)=>{
        return <Review key={i} {...data} />
     });
+
+    const tl = useRef(gsap.timeline({defaults: {duration: 0.6, ease: "power1.in"}}));
+
+function shouldIPause(){
+    if(isMouseInSubmit.current){
+        tl.current.pause();
+    }
+}
+
+
+    function submitAnimIn(){
+
+        isMouseInSubmit.current = true;
+
+        if(!isAnimating){
+            
+            setIsAnimating(true);
+            tl.current.fromTo("#submitButtonPlane", {
+                right: "100%"
+            },{
+                right: "40%",
+                onComplete: shouldIPause
+            }).fromTo("#submitButtonShader", {
+                opacity: 0
+            },{
+                opacity: 1,
+                duration: 0.25
+            }, "<")
+            
+            tl.current.to("#submitButtonPlane", {
+                right: "-20%",
+                duration: 0.3,
+                ease: "power1.in"
+            })
+            .to("#submitButtonShader", {
+                opacity: 0,
+                duration: 0.25,
+                onComplete: ()=>{tl.current.clear(); setIsAnimating(false);}
+            }, "<")
+        }
+    }
+
+    function submitAnimOut(){
+        isMouseInSubmit.current = false;
+     
+            tl.current.resume();
+        
+    }
 
   return (
     <>
@@ -68,7 +121,12 @@ export default function FormAndReviews() {
             <div className="input-wrapper">
                 <textarea maxLength={2000} name="message" id="messageInput" placeholder={"Write me a message..."}></textarea>
             </div>
-            <input type="submit" value="Send Now!" />
+            <div onMouseEnter={submitAnimIn} onMouseLeave={submitAnimOut}>
+                <div id="submitButtonShader">
+                    <div id="submitButtonPlane"></div>
+                </div>
+            <input id="submitButton" type="submit" value="Send Now!" />
+            </div>
         </form>
     </section>
     </>
