@@ -1,6 +1,6 @@
 import "./tagline.css"
 import animationData from "./animation.json"
-import Lottie from "react-lottie-player"
+import Lottie from "react-lottie-player/dist/LottiePlayerLight"
 
 export default function Tagline() {
   return (

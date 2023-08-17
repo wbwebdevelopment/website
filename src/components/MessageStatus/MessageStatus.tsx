@@ -1,6 +1,6 @@
 import "./messagestatus.css"
 import { useEffect, useState, useRef } from "react";
-import Lottie from "react-lottie-player";
+import Lottie from "react-lottie-player/dist/LottiePlayerLight";
 import successAnim from "./success-anim.json"
 
 export default function MessageStatus() {
