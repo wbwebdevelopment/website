@@ -1,11 +1,13 @@
 import "./form.css"
 import "./reviews.css"
-import { useRef, useState } from "react"
+import "./PhoneNumber/PhoneNumber"
+import { useEffect, useRef, useState } from "react"
 import reviewData from "./reviewData"
 import Review from "./Review"
 import Carousel from "react-multi-carousel"
 import gsap from "gsap"
 import MessageStatus from "../MessageStatus/MessageStatus"
+import PhoneNumber from "./PhoneNumber/PhoneNumber"
 
 export default function FormAndReviews() {
 
@@ -107,16 +109,15 @@ function shouldIPause(){
             
             <h2 id="contactFormTitle">Let's Talk!</h2>
             <div className="input-wrapper">
-                <img src="./img/icons/person-icon.svg" alt="Person Icon" />
+                <img id="formPersonIcon" src="./img/icons/person-icon.svg" alt="Person Icon" />
                 <input required type="text" name="name" id="nameInput" placeholder={"Name"} />
             </div>
             <div className="input-wrapper">
-                <img src="./img/icons/email-icon.svg" alt="Email Icon" />
+                <img id="formEmailIcon" src="./img/icons/email-icon.svg" alt="Email Icon" />
                 <input required type="email" name="email" id="emailInput" placeholder={"Email"} />
             </div>
             <div className="input-wrapper">
-                <img src="./img/icons/phone-icon.svg" alt="Phone Icon" />
-                <input required type="text" name="phone" id="phoneInput" placeholder={"Phone Number"} />
+                    <PhoneNumber />
             </div>
             <div className="input-wrapper">
                 <textarea maxLength={2000} name="message" id="messageInput" placeholder={"Write me a message..."}></textarea>
