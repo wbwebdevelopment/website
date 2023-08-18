@@ -7,16 +7,30 @@ import { useEffect, useRef } from "react"
 export default function PhoneNumber() {
 
     const inputRef: any = useRef();
+    const codeRef: any = useRef();
+
+    function updateNum(){
+      setTimeout(()=>{
+        codeRef.current.value = document.querySelector(".iti__selected-flag")!.getAttribute("title");
+      }, 200)
+     
+    }
 
     useEffect(()=>{
         intlTelInput(inputRef.current, {
-            hiddenInput: "full_phone",
             utilsScript: "../../../node_modules/intl-tel-input/build/js/utils.js"
+          })
+
+          updateNum();
+
+          document.querySelectorAll(".iti__country").forEach((elem)=>{
+            elem.addEventListener("click", updateNum);
           })
     }, [])
 
   return (
     <>
+    <input style={{display: "none"}} type="text" name="country_code" id="countryCodeInput" ref={codeRef} />
     <input ref={inputRef} required type="tel" name="phone" id="phoneInput" placeholder={"Phone Number"} />
     </>
   )
