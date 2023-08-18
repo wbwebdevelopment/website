@@ -10,11 +10,14 @@ export default function PhoneNumber() {
 
     useEffect(()=>{
         intlTelInput(inputRef.current, {
+            hiddenInput: "full_phone",
             utilsScript: "../../../node_modules/intl-tel-input/build/js/utils.js"
           })
     }, [])
 
   return (
-    <input  ref={inputRef} required type="tel" name="phone" id="phoneInput" placeholder={"Phone Number"} />
+    <>
+    <input ref={inputRef} required type="tel" name="phone" id="phoneInput" placeholder={"Phone Number"} />
+    </>
   )
 }
