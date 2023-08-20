@@ -18,7 +18,7 @@ export default function PhoneNumber() {
 
     useEffect(()=>{
         intlTelInput(inputRef.current, {
-            utilsScript: "../../../node_modules/intl-tel-input/build/js/utils.js"
+            utilsScript: "./vendor/utils.js"
           })
 
           updateNum();
