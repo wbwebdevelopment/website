@@ -16,7 +16,7 @@ export default function MessageStatus() {
     useEffect(()=>{
         let getParams = new URLSearchParams(window.location.search);
         if(getParams.has("messagesuccess")){
-            const newURL = (window.location.href).split("?")[0];
+            const newURL = location.origin + location.hash;
             window.history.replaceState({id: 999}, "Page", newURL);
 
             if(getParams.get("messagesuccess") == "true"){
