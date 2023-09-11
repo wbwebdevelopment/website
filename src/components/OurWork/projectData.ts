@@ -12,7 +12,7 @@ const projectData: projectType[] = [
     },
     {
         title: "Superior Pressure Washing LLC",
-        link: "https://superiorwashing.net",
+        link: "https://superiorpressurewashing.github.io/newsite",
         imgSrc: "https://i.imgur.com/1AYL0v0.png"
     }
 ]
