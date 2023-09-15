@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0 15px 0;
+    padding: 10px 0 25px 0;
 }
 
 /* TABLET STYLES */
@@ -177,7 +177,7 @@
     
     .service-price{
         padding: 2vw 6vw;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .service-content-wrapper{
