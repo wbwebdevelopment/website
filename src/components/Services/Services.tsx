@@ -35,6 +35,8 @@ export default function Services() {
                 {serviceElems}
             </Carousel>
         </div>
+        <p className="price-based">* Prices are based on your project’s scope</p>
+        <p className="other-options">If none of these options cover your project’s needs. Contact us and we will do our best to get you exactly what you need.</p>
     </section>
   )
 }
