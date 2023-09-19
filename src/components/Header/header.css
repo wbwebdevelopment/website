@@ -53,6 +53,16 @@ header{
         width: 20%;
     }
 
+.text-call-button{
+    position: absolute;
+    right:2vw;
+    top: 8vw;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
 #mainTagline{
     font-family: var(--secondary-font);
     margin-top: 9vw;
@@ -218,6 +228,10 @@ header{
         padding: 1vw;
         font-size: 1rem;
     }
+    .text-call-button{
+        top: 15vw;
+        font-size: 1.2rem;
+    }
     
     #mainTagline{
         margin-top: 15vw;
@@ -279,6 +293,11 @@ header{
         width: 15vh;
         border: 2.5px solid var(--main-text-color);
         font-size: 0.7rem;
+    }
+
+    .text-call-button{
+        top: 25vw;
+        font-size: .8rem;
     }
     
     #mainTagline{

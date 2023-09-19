@@ -43,6 +43,7 @@ export default function Header() {
           <span>Leave a Review!</span>
           </a>
       </div>
+      <a href="tel:+17065121082" className="text-call-button">Text or Call: +1 706-512-1082</a>
 
       <h1 id="mainTagline"><span>Upgrade</span> <span>your</span> <span>business!</span></h1>
       
@@ -51,9 +52,9 @@ export default function Header() {
 
 
       <div id="pointsWrapper">
-        <Point title="Built with modern technologies" />
         <Point title="Build trust with your customers" />
-        <Point title="Look as legitimate as possible" />
+        <Point title="Very competitive pricing" />
+        <Point title="Drive more conversions!" />
         <Point title="Optimized for SEO" />
       </div>
 
