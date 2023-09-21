@@ -107,6 +107,7 @@ function shouldIPause(){
         <form method="POST" action="https://formsubmit.co/97aca8e29358f1aec86ce3da24c5e17f" id="contactForm">
         <input type="hidden" name="_cc" value="williambojczuk@gmail.com"/>
         <input type="hidden" name="_next" value={`${window.location.origin}?messagesuccess=true${location.hash}`}/>
+        <input type="hidden" name="_captcha" value="false"/>
             
             <h2 id="contactFormTitle">Let's Talk!</h2>
             <div className="input-wrapper">
