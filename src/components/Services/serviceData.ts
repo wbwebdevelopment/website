@@ -15,7 +15,7 @@ const serviceData: serviceType[] = [
 We offer one-time invoices as well as subscription based plans that include maintenance`,
         cardColor: "#FF6767",
         iconSrc: "/img/icons/computer-icon.svg",
-        price: 200,
+        price: 400,
     },
    
     {
