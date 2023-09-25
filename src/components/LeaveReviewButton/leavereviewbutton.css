@@ -121,8 +121,9 @@
     }
     .leave-review-button-item{
         padding: 1.5vw 0 1.5vw 4vw;
-        width: 60%;
+        width: 80%;
         margin: 1vw 0;
+        font-size: 0.9rem;
     }
     
     .leave-review-button-item::after{

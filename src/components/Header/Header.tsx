@@ -39,7 +39,7 @@ export default function Header() {
     <header>
       <div id="logoWrapper">
         <img id="mainLogo" src="./img/mainlogo.png"/>
-        <LeaveReviewButton facebook="https://www.facebook.com/61551476578368/reviews/" google="https://g.page/r/Cd7IQM3jc37ZEBM/review" />
+        <LeaveReviewButton google="https://g.page/r/Cd7IQM3jc37ZEBM/review" facebook="https://www.facebook.com/profile.php?id=61551476578368" />
       </div>
       <a href="tel:+17065121082" className="text-call-button">Text or Call: +1 706-512-1082</a>
 
