@@ -43,6 +43,7 @@ header{
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s box-shadow, 0.3s transform;
+    background-color: transparent;
 }
 
 .get-in-touch-button:hover{

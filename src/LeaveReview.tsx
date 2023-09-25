@@ -2,8 +2,6 @@ import "./leavereview.css"
 import "./components/FormAndReviews/form.css"
 import {useState, useRef} from "react"
 import gsap from "gsap"
-import MessageStatus from "./components/MessageStatus/MessageStatus"
-import PhoneNumber from "./components/FormAndReviews/PhoneNumber/PhoneNumber"
 
 export default function LeaveReview() {
     const [isAnimating, setIsAnimating] = useState(false);

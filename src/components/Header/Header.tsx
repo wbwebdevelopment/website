@@ -2,6 +2,7 @@ import gsap from "gsap"
 import "./header.css"
 import Point from "./Point"
 import { useEffect } from "react"
+import LeaveReviewButton from "../LeaveReviewButton/LeaveReviewButton"
 
 
 export default function Header() {
@@ -38,10 +39,7 @@ export default function Header() {
     <header>
       <div id="logoWrapper">
         <img id="mainLogo" src="./img/mainlogo.png"/>
-        <a href="/leavereview" target="_blank" id="getInTouch" className="get-in-touch-button">
-          <img src="./img/icons/form-icon.svg" alt="form icon" />
-          <span>Leave a Review!</span>
-          </a>
+        <LeaveReviewButton facebook="https://www.facebook.com/61551476578368/reviews/" google="https://g.page/r/Cd7IQM3jc37ZEBM/review" />
       </div>
       <a href="tel:+17065121082" className="text-call-button">Text or Call: +1 706-512-1082</a>
 

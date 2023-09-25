@@ -31,8 +31,24 @@
     user-select: none;
     cursor: grab;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
-    overflow: scroll;
 }
+/* width */
+.review .desc::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .review .desc::-webkit-scrollbar-track {
+    background: transparent;
+    
+  }
+  
+  /* Handle */
+  .review .desc::-webkit-scrollbar-thumb {
+    background: #bd2525;
+    border-radius: 999px;
+  }
+
 .review:active{
     cursor: grabbing;
 }
@@ -49,11 +65,14 @@
 
     }
     .review .desc{
+        display: inline-block;
         line-height: 1.8rem;
         font-weight: 200;
         font-style: italic;
         color: #e9e9e9;
         letter-spacing: 0.1rem;
+        height: 15rem;
+        overflow-y: scroll;
          
     }
 
@@ -104,6 +123,7 @@
         }
         .review .desc{
             line-height: 1.5rem;
+            height: 10rem;
         }
 }
  
@@ -136,6 +156,7 @@
         .review .desc{
             line-height: 1.2rem;
             letter-spacing: 0.05rem;
+            height: 9rem;
         }
 }
 
@@ -152,6 +173,9 @@
     .review{
         font-size: 0.7rem;
         width: 20vh;
+    }
+    .review .desc{
+        height: 7rem;
     }
 }
 
