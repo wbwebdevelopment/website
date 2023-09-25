@@ -97,7 +97,7 @@ function shouldIPause(){
                 centerMode={true}
                 autoPlay={true}
                 infinite={true}
-                autoPlaySpeed={6000}
+                autoPlaySpeed={10000}
                 >
                     {ReviewElems}
                 </Carousel>

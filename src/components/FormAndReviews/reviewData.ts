@@ -5,7 +5,7 @@ interface reviewDataTypes{
 
 const reviewData: reviewDataTypes[] = [
     {
-        name: "David, COI",
+        name: "David, Cartersville Outreach International",
         desc: "Had William create a website for our international ministry. Did an amazing job with great detail. I definitely recommend using him. I will definitely use him again in the future.."
     },
     {

@@ -14,7 +14,6 @@
 }
 
 #leaveReviewButtonMenu{
-    
     position: absolute;
     top: 105%;
     left: 0;
@@ -69,11 +68,11 @@
 }
 .leave-review-button-item.facebook::after{
     background-image: url("./icons/facebook.svg");
-    background-size: 110%;
+    background-size: 120%;
 }
 
 .leave-review-button-item.google{
-    background-color: #DB4437;
+    background-color: #ff4f3e;
 }
 .leave-review-button-item.google::after{
     background-image: url("./icons/google.svg");
