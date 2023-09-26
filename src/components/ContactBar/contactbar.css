@@ -1,0 +1,98 @@
+#contactBar{
+    display: flex;
+    justify-content: center;
+    padding: 5vw 0;
+    background-color: var(--secondary-color);
+}
+
+#contactBar .seperator{
+    display: inline-block;
+    height: 12vw;
+    width: 2px;
+    /* margin: 0 5vw; */
+    background-color: var(--main-color);
+}
+
+.contact-bar-item{
+    display: inline-flex;
+    width: 15vw;
+    padding: 0 4vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: "Moul";
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 1.5rem;
+    transition: 0.3s background-color;
+
+}
+
+.email-link{
+    font-size: 1.2rem;
+}
+.contact-bar-item:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.contact-bar-item img{
+   width: 40%;
+   aspect-ratio: 1/1;
+   margin: 0 30%;
+}
+
+.contact-bar-item span{
+    padding: 1vw 0;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #contactBar{
+        padding: 8vw 0;
+    }
+    
+    #contactBar .seperator{
+        height: 20vw;
+        width: 2px;
+    }
+    
+    .contact-bar-item{
+        width: 24vw;
+        padding: 0 4vw;
+        font-size: 1.3rem;
+    }
+    
+    .email-link{
+        font-size: 1rem;
+    }
+    
+    .contact-bar-item span{
+        padding: 1vw 0;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #contactBar{
+        padding: 15vw 0;
+    }
+    
+    #contactBar .seperator{
+        height: 30vw;
+        width: 2px;
+    }
+    
+    .contact-bar-item{
+        width: 28vw;
+        padding: 0 4vw;
+        font-size: 0.8rem;
+    }
+    
+    .email-link{
+        font-size: 0.7rem;
+    }
+    
+    .contact-bar-item span{
+        padding: 1vw 0;
+    }
+}

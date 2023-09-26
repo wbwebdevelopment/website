@@ -12,10 +12,10 @@ const serviceData: serviceType[] = [
         title: "Website Design / Development",
         desc: `We will work with you to create the website you want. We will design, develop and get your website online so you can focus on other tasks.
 
-We offer one-time invoices as well as subscription based plans that include maintenance`,
+We offer subscription based plans that include all your website's needs, as well as one-time invoices`,
         cardColor: "#FF6767",
         iconSrc: "/img/icons/computer-icon.svg",
-        price: 400,
+        price: "50/m",
     },
    
     {
@@ -25,7 +25,7 @@ We offer one-time invoices as well as subscription based plans that include main
 Available at an affordable monthly subscription.`,
         cardColor: "#67D1FF",
         iconSrc: "/img/icons/maintenance-icon.svg",
-        price: "60/m",
+        price: "40/m",
     },
     {
         title: "Custom Scripts or Debugging",
