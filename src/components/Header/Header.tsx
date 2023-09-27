@@ -45,7 +45,7 @@ export default function Header() {
 
       <h1 id="mainTagline"><span>Upgrade</span> <span>your</span> <span>business!</span></h1>
       
-      <h3 id="secondTagline">Helping businesses strengthen their online presence and branding with modern technology.</h3>
+      <h3 id="secondTagline">Elevate Your Brand with our Websites. Let's Transform Your Online Presence Today!</h3>
       <a href="#contactFormTitle" id="contactButton">Let's Get Started!</a>
 
 
