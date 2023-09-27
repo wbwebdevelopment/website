@@ -7,8 +7,22 @@ import Tagline from "./components/Tagline/Tagline"
 import Footer from "./components/Footer/Footer"
 import Services from "./components/Services/Services"
 import ContactBar from "./components/ContactBar/ContactBar"
+import { useEffect } from "react"
 
 export default function App() {
+
+  useEffect(()=>{
+    const {hash} = location
+    if(hash != ""){
+      const targetElem = document.querySelector(hash)
+      if(targetElem){
+        setTimeout(()=>{
+          targetElem.scrollIntoView({block: "start", behavior: "instant"})
+        }, 100) 
+      }
+    }
+  }, [])
+
   return (
     <>
       <Header />
