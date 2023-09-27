@@ -146,10 +146,10 @@
     }
     
     .review{
-        width: 18vh;
+        width: 34vw;
         padding: 1.5vh 1.8vh;
         border-radius: 8px;
-        height: 25vh;
+        height: 50vw;
         margin: 0.5vh;
         font-size: 0.7rem;
     }
