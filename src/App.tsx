@@ -17,7 +17,7 @@ export default function App() {
       const targetElem = document.querySelector(hash)
       if(targetElem){
         setTimeout(()=>{
-          targetElem.scrollIntoView({block: "start", behavior: "instant"})
+          targetElem.scrollIntoView()
         }, 100) 
       }
     }
