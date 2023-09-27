@@ -9,26 +9,26 @@ interface serviceType {
 
 const serviceData: serviceType[] = [
     {
-        title: "Website Design / Development",
-        desc: `We will work with you to create the website you want. We will design, develop and get your website online so you can focus on other tasks.
-
-We offer subscription based plans that include all your website's needs, as well as one-time invoices`,
-        cardColor: "#FF6767",
-        iconSrc: "/img/icons/computer-icon.svg",
-        price: "50/m",
-    },
-   
-    {
-        title: "Website Maintenance",
-        desc: `Hire us to maintain your website. With unlimited revisions, domain handling, hosting configuration, error handling and more.
+        title: "Full Website Package",
+        desc: `Let us build and manage your website so you never even have to touch it. With unlimited revisions, domain registration, hosting configuration, error handling and more.
 
 Available at an affordable monthly subscription.`,
-        cardColor: "#67D1FF",
+        
+        cardColor: "#FF6767",
         iconSrc: "/img/icons/maintenance-icon.svg",
-        price: "40/m",
+        price: "80/m",
     },
     {
-        title: "Custom Scripts or Debugging",
+        title: "Website Design / Development",
+        desc: `We will work with you to create the website you want, and then hand the assets over to you.
+        
+We do offer domain registration, hosting configuration, maintenance, and other services. Contact us so we can get something that suits your needs perfectly`,
+        cardColor: "#67D1FF",
+        iconSrc: "/img/icons/computer-icon.svg",
+        price: "400",
+    },
+    {
+        title: "Custom Code or Debugging",
         desc: `If you need a custom script made or debugged. We can get you exactly what you need at a very competitive price.
 
 Languages supported are: NextJS, ReactJS, JavaScript, TypeScript, PHP, NodeJS, ExpressJS, CSS, HTML`,
