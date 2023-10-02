@@ -111,7 +111,7 @@
 }
 
 /* MEDIUM AND SMALL LAPTOPS */
-@media only screen and (min-width: 991px) and (max-width: 1920px){
+@media only screen and (min-width: 991px) and (max-width: 1910px){
     .service-card{
         width: 25vw;
         padding: 1vw 0;
