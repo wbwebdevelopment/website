@@ -3,9 +3,10 @@ import "./ourprocess.css"
 export default function OurProcess() {
   return (
     <section id="ourProcess">
-      <div id="ourProcessTitleWrapper">
+        <div id="ourProcessTitleWrapper">
         <h2 id="ourProcessTitle">Our Process</h2>
-      </div>
+        </div>
+
       <div id="ourProcessGridWrapper">
       <div id="ourProcessGrid">
         <div id="gridTitle1" className="grid-title">Design</div>

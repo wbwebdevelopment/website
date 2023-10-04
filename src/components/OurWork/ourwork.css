@@ -1,34 +1,29 @@
 #ourWork{
     padding: 4rem 0;
 }
-#ourWorkTitle{
-    color: var(--main-color);
-    text-align: center;
-    background-color: var(--secondary-color);
+#ourWorkTitleWrapper{
     position: relative;
 }
 
-#ourWorkTitle::after{
-    content: "";
+#ourWorkTitle{
     display: inline-block;
-    position: absolute;
-    height: 60%;
-    aspect-ratio: 1/1;
-    top:-0.3%;
-    right:0;
+    color: var(--secondary-color);
+    position: relative;
+    margin-left: 10%;
     background-color: var(--main-color);
-    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+    padding: 0 1%;
 }
-#ourWorkTitle::before{
-    content: "";
+
+#ourWorkTitleWrapper::after{
     display: inline-block;
+    content: "";
+    background-color: var(--secondary-color);
     position: absolute;
-    height: 60%;
-    aspect-ratio: 1/1;
-    bottom:-0.3%;
-    left:0;
-    background-color: var(--main-color);
-    clip-path: polygon(100% 100%, 0% 100%, 0% 0%);
+    height: 10px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    z-index: -1;
 }
 
 #projectsWrapper{

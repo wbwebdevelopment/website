@@ -10,7 +10,9 @@ export default function OurWork() {
     })
   return (
     <section id="ourWork">
+        <div id="ourWorkTitleWrapper">
         <h2 id="ourWorkTitle">Some of our work</h2>
+        </div>
         <div id="projectsWrapper">
             {projectElems}
         </div>

@@ -2,29 +2,35 @@
     min-height: 80vh;
     padding: 2rem 0 4rem 0;
 }
-#ourProcessTitleWrapper{
-    position: relative;
-}
 
 #ourProcessTitle{
-    display: inline-block;
-    color: var(--secondary-color);
-    position: relative;
-    margin-left: 10%;
-    background-color: var(--main-color);
-    padding: 0 1%;
+  color: var(--main-color);
+  text-align: center;
+  background-color: var(--secondary-color);
+  position: relative;
 }
 
-#ourProcessTitleWrapper::after{
-    display: inline-block;
-    content: "";
-    background-color: var(--secondary-color);
-    position: absolute;
-    height: 10px;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    z-index: -1;
+#ourProcessTitle::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 60%;
+  aspect-ratio: 1/1;
+  top:-0.3%;
+  right:0;
+  background-color: var(--main-color);
+  clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+}
+#ourProcessTitle::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 60%;
+  aspect-ratio: 1/1;
+  bottom:-0.3%;
+  left:0;
+  background-color: var(--main-color);
+  clip-path: polygon(100% 100%, 0% 100%, 0% 0%);
 }
 
 #ourProcessGridWrapper{

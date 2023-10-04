@@ -29,8 +29,9 @@ export default function App() {
       <ContactBar />
       <FormAndReviews />
       <Services />
-      <OurProcess />
+      
       <OurWork />
+      <OurProcess />
       <WeDo />
       <Tagline />
       <Footer />
