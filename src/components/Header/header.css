@@ -332,6 +332,9 @@ header{
 
 /* SMALL  MOBILE STYLES */
 @media only screen and (max-width: 380px){
+    header{
+        min-height: 175vw;
+    }
     #pointsWrapper{
         bottom: 2%;
     }
