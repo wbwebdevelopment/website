@@ -43,16 +43,16 @@ export default function Header() {
       </div>
       <a href="tel:+17065121082" className="text-call-button">Text or Call: +1 706-512-1082</a>
 
-      <h1 id="mainTagline"><span>Empower</span> <span>your</span> <span>business!</span></h1>
+      <h1 id="mainTagline"><span>Propel</span> <span>your</span> <span>business!</span></h1>
       
-      <h3 id="secondTagline">Elevate Your Brand with our Websites. Get a Free Quote and Let's Transform Your Online Presence Today!</h3>
+      <h3 id="secondTagline">Propel Your Brand with our Websites. Get a Free Quote and Let's Transform Your Online Presence Today!</h3>
       <a href="#contactBar" id="contactButton">Let's Get Started!</a>
 
 
       <div id="pointsWrapper">
         <Point title="Build trust with your customers" />
-        <Point title="Very competitive pricing" />
-        <Point title="Drive more conversions!" />
+        <Point title="Get More Leads" />
+        <Point title="Book More Jobs" />
         <Point title="Optimized for SEO" />
       </div>
 
