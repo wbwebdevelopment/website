@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 header{
     position: relative;
-    min-height: 200vw;
+    min-height: 100vh;
 }
 
 #headerBg{
@@ -270,6 +270,9 @@ header{
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
+    header{
+        min-height: 200vw;
+    }
     #contactButton{
         font-size: 1rem;
         padding: 0.5vh 2vh;
