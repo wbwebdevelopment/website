@@ -6,7 +6,7 @@ interface projectType{
 
 const projectData: projectType[] = [
     {
-        title: "SuperSpray Pressure Washing",
+        title: "SpeedSpray Pressure Washing",
         link: "https://speedspray.github.io/website/",
         imgSrc: "https://i.imgur.com/JPpMYc5.png"
     },
