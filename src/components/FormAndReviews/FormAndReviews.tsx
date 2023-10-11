@@ -1,5 +1,6 @@
 import "./form.css"
 import "./reviews.css"
+import handleFormSubmit from "./handleFormSubmit"
 import "./PhoneNumber/PhoneNumber"
 import { useEffect, useRef, useState } from "react"
 import reviewData from "./reviewData"
@@ -13,6 +14,8 @@ export default function FormAndReviews() {
 
     const [isAnimating, setIsAnimating] = useState(false);
     const isMouseInSubmit = useRef(false);
+    const [status, setStatus] = useState("none")
+    const formRef: any = useRef();
 
     const responsive = {
         desktop: {
@@ -85,7 +88,7 @@ function shouldIPause(){
 
   return (
     <>
-    <MessageStatus />
+    <MessageStatus status={status} setStatus={setStatus} />
     <section id="formAndReviews">
  
         <div id="reviewsWrapper">
@@ -104,7 +107,7 @@ function shouldIPause(){
             </div>
         </div>
 
-        <form method="POST" action="https://formsubmit.co/97aca8e29358f1aec86ce3da24c5e17f" id="contactForm">
+        <form ref={formRef} id="contactForm"  onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef)}}>
         <input type="hidden" name="_cc" value="williambojczuk@gmail.com"/>
         <input type="hidden" name="_next" value={`${window.location.origin}?messagesuccess=true${location.hash}`}/>
         <input type="hidden" name="_captcha" value="false"/>

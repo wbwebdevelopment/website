@@ -1,51 +1,44 @@
+import Lottie from 'react-lottie-player/dist/LottiePlayerLight'
 import "./messagestatus.css"
-import { useEffect, useState, useRef } from "react";
-import Lottie from "react-lottie-player/dist/LottiePlayerLight";
-import successAnim from "./success-anim.json"
+import successAnim from "./anim/success.json";
+import errorAnim from "./anim/error.json";
+import loadingAnim from "./anim/loading.json"
+import { useEffect, useRef, useState } from 'react';
 
-export default function MessageStatus() {
+interface messageSuccessProps{
+  status: string,
+  setStatus: any
+}
 
-    const wrapperRef:any = useRef();
-    const [messageSuccess, setMessageSuccess] = useState("none");
-    const [messageStatusStyles, setMessageStatusStyles] = useState({opacity: 1, display: "flex"});
+export default function MessageStatus(props: messageSuccessProps) {
+    const wrapperElem: any = useRef();
 
-    function removeAnim(){
-        setMessageStatusStyles((old)=>{return{...old, opacity: 0}});
+    function animEnd(){
+        wrapperElem.current.style.opacity = "0";
+        props.setStatus("none")
     }
 
-    useEffect(()=>{
-        let getParams = new URLSearchParams(window.location.search);
-        if(getParams.has("messagesuccess")){
-            const newURL = location.origin + location.hash;
-            window.history.replaceState({id: 999}, "Page", newURL);
+  return (
+    <>
+    {(props.status != "none") &&  <div
+    ref={wrapperElem}
+    style={{display: (props.status != "none") ? "inline-flex" : "none"}}
+    id="messageSuccess">
+        <div id="messageSuccessWrapper">
+            {(props.status == "loading") && <Lottie
+            animationData={loadingAnim}
+            play={true}
+            loop={true}
+            ></Lottie>}
 
-            if(getParams.get("messagesuccess") == "true"){
-                setMessageSuccess("success");
-            }
-        }
-    }, [])
-    
-    if(messageSuccess == "success"){
-        
-        return (
-            <div
-            ref={wrapperRef}
-            style={messageStatusStyles}
-            id="messageStatusWrapper"
-            onTransitionEnd={()=>{setMessageStatusStyles((old)=>{return{...old, display: "none"}});}}
-            >
-                <div id="messageStatusAnim">
-                    <Lottie 
-                    animationData={successAnim}
-                    play={true}
-                    loop={false}
-                    onComplete={removeAnim}
-                    />
-                </div>
-            </div>
-          )
-    }else{
-        return <></>
-    }
-  
+            {(props.status != "loading") && <Lottie
+            animationData={(props.status == "success") ? successAnim : errorAnim}
+            play={true}
+            loop={false}
+            onComplete={animEnd}
+            ></Lottie>}
+        </div>
+    </div>}
+    </>
+  )
 }
