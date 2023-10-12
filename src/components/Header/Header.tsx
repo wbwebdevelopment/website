@@ -45,7 +45,7 @@ export default function Header() {
 
       <h1 id="mainTagline"><span>Propel</span> <span>your</span> <span>business!</span></h1>
       
-      <h3 id="secondTagline">Propel Your Brand with our Websites. Get a Free Quote and Let's Transform Your Online Presence Today!</h3>
+      <h3 id="secondTagline">Propel Your business to new heights with the help of our custom-made websites. Get a Free Quote and Let's Transform Your Online Presence Today!</h3>
       <a href="#contactBar" id="contactButton">Get a free quote!</a>
 
 
