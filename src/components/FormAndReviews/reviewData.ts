@@ -4,9 +4,10 @@ interface reviewDataTypes{
 }
 
 const reviewData: reviewDataTypes[] = [
+   
     {
-        name: "Alex - PushMusic, Fiverr",
-        desc: "Super happy I found William's page! I had some HTML that I needed revised to customize a search bar on my website. William was able to assist timely and efficiently. If/when I need someone to write or edit custom code, I will definitely turn to William again!"
+        name: "Heather, Fiverr",
+        desc: "He did an AMAZING job! He was very patient with all of our requests in the order. He worked with me every step of the way and sent screenshots of every step! I would HIGHLY recommend to anyone who ever needs help! I will DEFINITELY be using his services again! I am over the moon excited about how quickly it was done and the communication throughout the whole process. Great work!!"
     },
     
     {
@@ -17,6 +18,11 @@ const reviewData: reviewDataTypes[] = [
     {
         name: "David, COI",
         desc: "Had William create a website for our international ministry. Did an amazing job with great detail. I definitely recommend using him. I will definitely use him again in the future.."
+    },
+
+    {
+        name: "Alex - PushMusic, Fiverr",
+        desc: "Super happy I found William's page! I had some HTML that I needed revised to customize a search bar on my website. William was able to assist timely and efficiently. If/when I need someone to write or edit custom code, I will definitely turn to William again!"
     },
     
     
