@@ -12,7 +12,7 @@ export default function Service({title, desc, cardColor, iconSrc, price}: servic
     <a className="service-card" href="#contactFormTitle" style={{backgroundColor: cardColor}}>
         <div className="service-icon-wrapper">
             <img className="service-icon" src={iconSrc} alt={`Icon of ${title}`} />
-            <div className="service-price">From ${price}</div>
+            <div className="service-price">{price}</div>
         </div>
         <div className="service-content-wrapper">
             <h4 className="service-title">{title}</h4>

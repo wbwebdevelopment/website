@@ -16,7 +16,7 @@ Available at an affordable monthly subscription.`,
         
         cardColor: "#FF6767",
         iconSrc: "/img/icons/maintenance-icon.svg",
-        price: "80/m",
+        price: "Contact",
     },
     {
         title: "Website Design / Development",
@@ -25,7 +25,7 @@ Available at an affordable monthly subscription.`,
 We do offer domain registration, hosting configuration, maintenance, and other services. Contact us so we can get something that suits your needs perfectly`,
         cardColor: "#67D1FF",
         iconSrc: "/img/icons/computer-icon.svg",
-        price: "400",
+        price: "Contact",
     },
     {
         title: "Custom Code or Debugging",
@@ -34,7 +34,7 @@ We do offer domain registration, hosting configuration, maintenance, and other s
 Languages supported are: NextJS, ReactJS, JavaScript, TypeScript, PHP, NodeJS, ExpressJS, CSS, HTML`,
         cardColor: "#FF9E67",
         iconSrc: "/img/icons/code-icon.svg",
-        price: 20,
+        price: "Contact",
     }
 ]
 
