@@ -29,7 +29,7 @@
 #projectsWrapper{
     margin-top: 5rem;
     display: inline-flex;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     width: 70%;
     margin-left: 15%;
@@ -52,6 +52,7 @@
         font-size: 3rem;
         line-height: 1.1em;
         margin-top: 0.5rem;
+        padding: 0 1vw;
     }
     .project-link{
         display: inline-block;
